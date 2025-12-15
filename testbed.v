@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module tb;
+module tc;
 
 wire
 reg
