@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 module tc;
 
-wire
-reg
+wire ;
+reg ;
 initial begin t_clock = 0; forever #5 t_clock = ~t_clock; end
 
 initial
