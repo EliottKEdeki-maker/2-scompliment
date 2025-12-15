@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 module invert();
 
-  input
-  output
+  input x,r;
+  output q1, q2;
   wire
