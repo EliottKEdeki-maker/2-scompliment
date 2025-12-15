@@ -9,6 +9,5 @@ initial
   begin
 
   end
-  
   initial #500 $finish;
 endmodule
