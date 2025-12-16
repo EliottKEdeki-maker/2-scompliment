@@ -8,6 +8,9 @@ initial begin t_clock = 0; forever #5 t_clock = ~t_clock; end
 
 initial
   begin
+    $dumpfile("wave.vcd");
+    $dumpvars(0, tc, I1);
+    
 
   end
   initial #500 $finish;
