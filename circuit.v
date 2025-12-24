@@ -10,6 +10,9 @@ module invert(x,r,t_clk,y);
   nand #(12) (q, jk1, nq);
   nand #(12) (nq, jk2, q);
 
-  xnor #(10) (y, nq, q);
+  xnor #(10) (i, nq, q);
+  not #(5) (y, i);
+  
+  
 endmodule
  
