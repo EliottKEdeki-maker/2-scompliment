@@ -1,10 +1,11 @@
-`timescale 1ns / 1ps
+ `timescale 1ns / 1ps
 module invert(x,r,t_clk,y);
 
   input x,r,t_clk;
   output y;
-  wire jk1, jk2, q, nq;
+  wire j, k, jk1, jk2, q, nq;
 
+  and #(10) ();
   nand #(12) (jk1, j, t_clk, nq);
   nand #(12) (jk2, k, t_clk, q);
   nand #(12) (q, jk1, nq);
