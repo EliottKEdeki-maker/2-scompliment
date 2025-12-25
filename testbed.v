@@ -9,18 +9,18 @@ initial
   begin
     $dumpfile("wave.vcd");
     $dumpvars(0, tc, I1);
-    #78 i = 1'b1, r = 1'b1, t_clock;
-    #78 i = 1'b0, r = 1'b0, t_clock;
-    #78 i = 1'b1, r = 1'b0, t_clock;
-    #78 i = 1'b0, r = 1'b0, t_clock;
-    #78 i = 1'b1, r = 1'b1, t_clock;
-    #78 i = 1'b1, r = 1'b0, t_clock;
-    #78 i = 1'b0, r = 1'b0, t_clock;
-    #78 i = 1'b1, r = 1'b0, t_clock;
-    #78 i = 1'b0, r = 1'b0, t_clock;
-    #78 i = 1'b0, r = 1'b0, t_clock;
-    #78 i = 1'b1, r = 1'b0, t_clock;
-    #78 i = 1'b1, r = 1'b0, t_clock;
+    #78 i = 1'b1, r = 1'b1;
+    #78 i = 1'b0, r = 1'b0;
+    #78 i = 1'b1, r = 1'b0;
+    #78 i = 1'b0, r = 1'b0;
+    #78 i = 1'b1, r = 1'b1;
+    #78 i = 1'b1, r = 1'b0;
+    #78 i = 1'b0, r = 1'b0;
+    #78 i = 1'b1, r = 1'b0;
+    #78 i = 1'b0, r = 1'b0;
+    #78 i = 1'b0, r = 1'b0;
+    #78 i = 1'b1, r = 1'b0;
+    #78 i = 1'b1, r = 1'b0;
 
   end
   initial #937 $finish;
