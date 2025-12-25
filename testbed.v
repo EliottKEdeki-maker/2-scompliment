@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 module tc;
   wire y;
-  reg i,r;
+  reg i,r,t_clock;
   initial begin t_clock = 0; forever #77 t_clock = ~t_clock; end
   invert I1 (i,r,t_clock,y);
 
