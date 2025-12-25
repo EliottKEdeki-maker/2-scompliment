@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module invert(x,r,t_clk,y);
+module invert(i,r,t_clk,y);
 
   input  i,r,t_clk;
   output y;
