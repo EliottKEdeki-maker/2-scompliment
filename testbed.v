@@ -3,7 +3,7 @@ module tc;
   wire y;
   reg i,r;
   initial begin t_clock = 0; forever #77 t_clock = ~t_clock; end
-  invert I1 (x,r,t_clock,y);
+  invert I1 (i,r,t_clock,y);
 
 initial
   begin
