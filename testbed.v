@@ -2,7 +2,7 @@
 module tc;
   wire y;
   reg i,r,t_clock;
-  initial begin t_clock = 0; forever #20 t_clock = ~t_clock; end
+  initial begin t_clock = 0; forever #100 t_clock = ~t_clock; end
   invert I1 (i,r,t_clock,y);
 
 initial
