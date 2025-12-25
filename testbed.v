@@ -10,19 +10,19 @@ initial
   begin
     $dumpfile("wave.vcd");
     $dumpvars(0, tc, I1);
-    #85 x = 1'b1, r = 1'b1;
-    #85 x = 1'b0, r = 1'b0;
-    #85 x = 1'b1, r = 1'b0;
-    #85 x = 1'b0, r = 1'b0;
-    #85 x = 1'b1, r = 1'b1;
-    #85 x = 1'b1, r = 1'b0;
-    #85 x = 1'b0, r = 1'b0;
-    #85 x = 1'b1, r = 1'b0;
-    #85 x = 1'b0, r = 1'b0;
-    #85 x = 1'b0, r = 1'b0;
-    #85 x = 1'b1, r = 1'b0;
-    #85 x = 1'b1, r = 1'b0;
+    #77 x = 1'b1, r = 1'b1;
+    #77 x = 1'b0, r = 1'b0;
+    #77 x = 1'b1, r = 1'b0;
+    #77 x = 1'b0, r = 1'b0;
+    #77 x = 1'b1, r = 1'b1;
+    #77 x = 1'b1, r = 1'b0;
+    #77 x = 1'b0, r = 1'b0;
+    #77 x = 1'b1, r = 1'b0;
+    #77 x = 1'b0, r = 1'b0;
+    #77 x = 1'b0, r = 1'b0;
+    #77 x = 1'b1, r = 1'b0;
+    #77 x = 1'b1, r = 1'b0;
 
   end
-  initial #1200 $finish;
+  initial #925 $finish;
 endmodule
