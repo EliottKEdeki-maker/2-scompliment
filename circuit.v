@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 module invert(x,r,t_clk,y);
 
-  input x,r,t_clk;
+  input X,r,t_clk;
   output y;
   wire j, k, jk1, jk2, q, nq, nx, i, c;
 
