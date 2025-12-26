@@ -9,7 +9,7 @@ module invert(i,r,t_clk,y);
   and #(10) (J, qn, i);
   buf #(4) (K, r);
   not #(5) (kn, K);
-  and #(10) (jk1, j, NQ);
+  and #(10) (jk1, j, qn);
   and #(10) (jk2, kn, q);
   or #(10) (D, jk1, jk2);
   nand #(12) (d1, d4, S);
