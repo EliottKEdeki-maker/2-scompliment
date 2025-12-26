@@ -3,10 +3,9 @@ module invert(i,r,t_clk,y);
 
   input  i,r,t_clk;
   output y;
-  wire J, K, jk1, jk2, Q, NQ, qn, kn, D, d1, S, R, d4;
+  wire J, K, jk1, jk2, Q, NQ, kn, D, d1, S, R, d4;
 
-  not #(5) (qn, Q);
-  and #(10) (J, qn, i);
+  and #(10) (J, NQ, i);
   buf #(4) (K, r);
   not #(5) (kn, K);
   and #(10) (jk1, J, NQ);
