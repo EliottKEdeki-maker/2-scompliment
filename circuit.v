@@ -5,7 +5,7 @@ module invert(i,r,t_clk,y);
   output y;
   wire j, k, jk1, jk2, q, nq;
   
-  and #(10) (j, qn, i);
+  and #(10) (j, nq, i);
   buf #(4) (k, r);
 
   nand #(12) (jk1, j, t_clk, nq);
