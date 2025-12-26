@@ -9,8 +9,8 @@ module invert(i,r,t_clk,y);
   and #(10) (j, qn, i);
   buf #(4) (k, r);
 
-  nand #(12) (jk1, j, t_clk);
-  nand #(12) (jk2, k, t_clk);
+  nand #(12) (jk1, j, t_clk, nq);
+  nand #(12) (jk2, k, t_clk, q);
   nand #(12) (q, jk1, nq);
   nand #(12) (nq, jk2, q);
 
