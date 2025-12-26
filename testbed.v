@@ -23,5 +23,5 @@ initial
     #78 i = 1'b1; r = 1'b0;
 
   end
-  initial #937 $finish;
+  initial #1500 $finish;
 endmodule
