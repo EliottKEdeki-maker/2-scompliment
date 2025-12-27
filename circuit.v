@@ -12,7 +12,15 @@ module invert(i,r,t_clk,y);
   and #(10) (jk2, kn, Q);
   or #(10) (D, jk1, jk2);
 
-  nand #(12) 
+  nand #(12) (d1, S, d4);
+  nand #(12) (S, d1, R);
+  nand #(12) (R, S, t_clk, d4);
+  nand #(12) (d4, R, D);
+
+  nand #(12) (Q, NQ, S);
+  nand #(12) (NQ, Q, R);
+
+  
   
   
 endmodule
