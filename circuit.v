@@ -3,7 +3,7 @@ module invert(i,r,t_clk,y);
 
   input  i,r,t_clk;
   output y;
-  wire in, K, jk1, jk2, Q, NQ, kn, D, d1, S, R, d4;
+  wire in, K, jk1, jk2, Q, NQ, kn, D, d1, S, R, d4, rn, Qrn;
 
   not #(5) (in, i);
   and #(10) (K, in, r);
@@ -20,8 +20,9 @@ module invert(i,r,t_clk,y);
   nand #(12) (Q, NQ, S);
   nand #(12) (NQ, Q, R);
 
-  
-  
+  not #(5) (rn, r);
+  and #(10) (Qrn, Q, rn);
+  xor #(15) (y, i, Qrn);
   
 endmodule
  
