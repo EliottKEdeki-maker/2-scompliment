@@ -10,7 +10,8 @@ initial
     $dumpfile("wave.vcd");
     $dumpvars(0, tc, I1);
       i = 1'b1; r = 1'b1;
-    #300; i = 1'b0; r = 1'b0;
+    #100  i = 1'b1; r = 1'b1;
+    #200; i = 1'b0; r = 1'b0;
     #200; i = 1'b1; r = 1'b0;
     #200; i = 1'b0; r = 1'b0;
     #200; i = 1'b1; r = 1'b1;
