@@ -33,7 +33,7 @@ initial
     i = 1'b1; r = 1'b0;
     #156; 
     i = 1'b1; r = 1'b0;
-    #156
+    #156;
 
   end
   initial #1920 $finish;
