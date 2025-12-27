@@ -24,5 +24,5 @@ initial
     #152 i = 1'b1; 
 
   end
-  initial #1890 $finish;
+  initial #2100 $finish;
 endmodule
