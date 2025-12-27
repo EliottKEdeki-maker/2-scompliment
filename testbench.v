@@ -2,7 +2,7 @@
 module tc;
   wire y;
   reg i,r,t_clk;
-  initial begin t_clk = 0; forever #156 t_clk = ~t_clk; end
+  initial begin t_clk = 0; forever #90 t_clk = ~t_clk; end
   invert I1 (i,r,t_clk,y);
 
 initial
