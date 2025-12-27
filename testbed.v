@@ -2,7 +2,7 @@
 module tc;
   wire y;
   reg i,r,t_clk;
-  initial begin t_clk = 0; forever #76 t_clk = ~t_clk; end
+  initial begin t_clk = 0; forever #78 t_clk = ~t_clk; end
   invert I1 (i,r,t_clk,y);
 
 initial
@@ -10,17 +10,17 @@ initial
     $dumpfile("wave.vcd");
     $dumpvars(0, tc, I1);
     i = 1'b1; r = 1'b1;
-    #25 i = 1'b0; r = 1'b0;
-    #25 i = 1'b1;
-    #25 i = 1'b0; 
-    #25 i = 1'b1; r = 1'b1;
-    #25 i = 1'b1; r = 1'b0;
-    #25 i = 1'b0; 
-    #25 i = 1'b1; 
-    #25 i = 1'b0; 
-    #25 i = 1'b0; 
-    #25 i = 1'b1; 
-    #25 i = 1'b1; 
+    #152 i = 1'b0; r = 1'b0;
+    #152 i = 1'b1;
+    #152 i = 1'b0; 
+    #152 i = 1'b1; r = 1'b1;
+    #152 i = 1'b1; r = 1'b0;
+    #152 i = 1'b0; 
+    #152 i = 1'b1; 
+    #152 i = 1'b0; 
+    #152 i = 1'b0; 
+    #152 i = 1'b1; 
+    #152 i = 1'b1; 
 
   end
   initial #500 $finish;
