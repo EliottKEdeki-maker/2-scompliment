@@ -1,3 +1,3 @@
-iverilog circuit.v testbed.v
+iverilog circuit.v testbench.v
 vvp a.out
 gtkwave wave.vcd
