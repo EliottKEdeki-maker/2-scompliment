@@ -9,34 +9,22 @@ initial
   begin
     $dumpfile("wave.vcd");
     $dumpvars(0, tc, I1);
-    i = 1'b0; r = 1'b1;
-    #160;
-    #40;
-    i = 1'b1; r = 1'b1;
-    #160;
-    i = 1'b0; r = 1'b0;
-    #160;
-    i = 1'b1; r = 1'b0;
-    #160;
-    i = 1'b0; r = 1'b0;
-    #160;
-    i = 1'b1; r = 1'b1;
-    #160;
-     i = 1'b1; r = 1'b0;
-    #160;
-    i = 1'b0; r = 1'b0;
-    #160;
-    i = 1'b1; r = 1'b0;
-    #160;
-    i = 1'b0; r = 1'b0;
-    #160;
-    i = 1'b0; r = 1'b0;
-    #160; 
-    i = 1'b1; r = 1'b0;
-    #160; 
-    i = 1'b1; r = 1'b0;
-    #160;
+    //i = 1'b0; r = 1'b1; intialization value so flip flop isn't x value at start
+    #156;
+    #40; i = 1'b1; r = 1'b1;
+    #156; i = 1'b0; r = 1'b0;
+    #156; i = 1'b1; r = 1'b0;
+    #156; i = 1'b0; r = 1'b0;
+    #156; i = 1'b1; r = 1'b1;
+    #156; i = 1'b1; r = 1'b0;
+    #156; i = 1'b0; r = 1'b0;
+    #156; i = 1'b1; r = 1'b0;
+    #156; i = 1'b0; r = 1'b0;
+    #156; i = 1'b0; r = 1'b0;
+    #156; i = 1'b1; r = 1'b0;
+    #156; i = 1'b1; r = 1'b0;
+    //#156;
 
   end
-  initial #2600 $finish;
+  initial #1920 $finish;
 endmodule
