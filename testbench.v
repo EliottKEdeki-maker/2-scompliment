@@ -10,18 +10,18 @@ initial
     $dumpfile("wave.vcd");
     $dumpvars(0, tc, I1);
     i = 1'b0; r = 1'b1; //intialization value so flip flop with one full clock period to get rid of x values                                           
-    #156; i = 1'b1; r = 1'b1; // input bits least to most signifiant
-    #156; i = 1'b0; r = 1'b0;
-    #156; i = 1'b1; r = 1'b0;
-    #156; i = 1'b0; r = 1'b0;
-    #156; i = 1'b1; r = 1'b1;
-    #156; i = 1'b1; r = 1'b0;
-    #156; i = 1'b0; r = 1'b0;
-    #156; i = 1'b1; r = 1'b0;
-    #156; i = 1'b0; r = 1'b0;
-    #156; i = 1'b0; r = 1'b0;
-    #156; i = 1'b1; r = 1'b0;
-    #156; i = 1'b1; r = 1'b0;
+    #155; i = 1'b1; r = 1'b1; // input bits least to most signifiant
+    #155; i = 1'b0; r = 1'b0;
+    #155; i = 1'b1; r = 1'b0;
+    #155; i = 1'b0; r = 1'b0;
+    #155; i = 1'b1; r = 1'b1;
+    #155; i = 1'b1; r = 1'b0;
+    #155; i = 1'b0; r = 1'b0;
+    #155; i = 1'b1; r = 1'b0;
+    #155; i = 1'b0; r = 1'b0;
+    #155; i = 1'b0; r = 1'b0;
+    #155; i = 1'b1; r = 1'b0;
+    #155; i = 1'b1; r = 1'b0;
     
 
   end
