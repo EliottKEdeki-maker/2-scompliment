@@ -2,7 +2,7 @@
 module tc;
   wire y;
   reg i,r,t_clk;
-  initial begin t_clk = 0; forever #59 t_clk = ~t_clk; end // total delay of ciruit is 156 so set half of clock period to 156/2 = 78 
+  initial begin t_clk = 0; forever #38 t_clk = ~t_clk; end // total delay of ciruit is 156 so set half of clock period to 156/2 = 78 
   invert I1 (i,r,t_clk,y);
 
 initial
