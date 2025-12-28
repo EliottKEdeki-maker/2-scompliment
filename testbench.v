@@ -11,6 +11,7 @@ initial
     $dumpvars(0, tc, I1);
     i = 1'b1; r = 1'b1;
     #156;
+    #45;
     i = 1'b0; r = 1'b0;
     #156;
     i = 1'b1; r = 1'b0;
