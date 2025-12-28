@@ -2,7 +2,7 @@
 module tc;
   wire y;
   reg i,r,t_clk;
-  initial begin t_clk = 0; forever #78 t_clk = ~t_clk; end
+  initial begin t_clk = 0; forever #156 t_clk = ~t_clk; end
   invert I1 (i,r,t_clk,y);
 
 initial
@@ -11,7 +11,6 @@ initial
     $dumpvars(0, tc, I1);
     i = 1'b1; r = 1'b1;
     #156;
-    #46;
     i = 1'b0; r = 1'b0;
     #156;
     i = 1'b1; r = 1'b0;
