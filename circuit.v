@@ -11,10 +11,10 @@ module invert(i,r,t_clk,y);
   not #(5) (kn, K);
   and #(10) (jk1, J, NQ);
   and #(10) (jk2, kn, Q);
-  or #(10) (D, jk1, jk2, 1);
+  or #(10) (D, jk1, jk2);
 
   nand #(12) (d1, S, d4);
-  nand #(12) (S, d1, t_clk, R);
+  nand #(12) (S, d1, t_clk);
   nand #(12) (R, S, t_clk, d4);
   nand #(12) (d4, R, D);
 
