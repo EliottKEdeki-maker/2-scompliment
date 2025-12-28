@@ -11,7 +11,7 @@ initial
     $dumpvars(0, tc, I1);
     force I1.Q = 0;
     force I1.NQ = 1;
-    #10;          // Hold it for a few ns
+    #1000;          // Hold it for a few ns
     release I1.Q;
     release I1.NQ;
     i = 1'b1; r = 1'b1;
