@@ -25,5 +25,5 @@ initial
     
 
   end
-  initial #1950 $finish; // Total time accounts for all delays
+  initial #912 $finish; // Total time accounts for all delays
 endmodule
